@@ -1,0 +1,101 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#_nav_background{
+	position: fixed;
+	background-color: #e1e1e1;
+	width: 100%;
+	display: inline-block;
+	box-shadow: 0px 1px 5px #888888;
+	z-index: 1000;
+}
+
+#title{
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+	line-height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 5px;
+	color: #f00;
+}
+
+#title-image{
+	height: 100%;
+	width: 500px;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#_nav{
+	width: 900px;
+	display: block;
+	padding: 10px;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#_nav li{
+	list-style: none;
+	width: 20%;
+	float: left;
+}
+
+#_nav li a{
+	display: block;
+	color: #000;
+	font-size: 1.2em;
+	line-height:30px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#_nav li a:hover, .active-page{
+	border-bottom: 1px solid #999;
+}
+
+.sidenav-button{
+	float:left;
+	margin-left: 1.5%;
+	font-size: 2em;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	height: 30px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.sidenav-style {
+    height: 100%; 
+	margin-top: 111px;
+    width: 0;
+	border-right: 1px solid;
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden; 
+    transition: 0.5s;
+	padding-top: 110px;
+}
+
+/* The navigation menu links */
+.sidenav-style a {
+    text-decoration: none;
+    font-size: 1.5em;
+	margin-top:10px;
+	margin-bottom:10px;
+	width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+    color: #000;
+    display: block;
+}
