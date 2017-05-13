@@ -3,8 +3,18 @@
 
 	<head>
 	<title>Project</title>
-	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/product.js"></script>
+	<script type="text/javascript" src="js/page.js"></script>
+	<script>
+	$(document ).ready( function(){
+		var createdProducts = [];
+		for(var i = 0; i < 4; i++){
+			createdProducts[i] = createProduct();
+		}
+		console.log(createdProducts.length);
+	});
+	</script>
 	<style>
 		@import "css/navigationbar.css";
 		@import "css/index-style.css";
@@ -14,16 +24,57 @@
 	
 	<body>
 	<section id="_nav_background">
-		<div id="title"><a href="index.html"><img src="images/Computer-Logo.png" id="title-image"></a></div>
-		<span onclick="onClickSide()" class="sidenav-button">&#9776;</span>
+		<div id="title"><a href="index.html"><img src="images/TEMP_Logo.png" id="title-image"></a></div>
+		<span onclick="createProduct()" class="sidenav-button">&#9776;</span>
 		<nav id="_nav">
-			<ul>
-				<li><a href="phones.html">Mobile Products</a></li>
-				<li><a href="#">Computer Products</a></li>
-				<li><a href="#">Referbushed Items</a></li>
-				<li><a href="#">Repair Services</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
+			<div class="_nav-selection">
+				<button class="_nav-selection-button">Phone Products</button>
+				<div class="_nav-selection-content">
+					<a href="phones.html">Phones</a>
+					<a href="#">Phone Accessories</a>
+					<a href="#">Other</a>
+				</div>
+			</div>
+			<div class="_nav-selection">
+				<button class="_nav-selection-button">Computer Products</button>
+				<div class="_nav-selection-content">
+					<a href="phones.html">Phones</a>
+					<a href="#">Phone Accessories</a>
+					<a href="#">Other</a>
+				</div>
+			</div>
+			<div class="_nav-selection">
+				<button class="_nav-selection-button">Phone Products</button>
+				<div class="_nav-selection-content">
+					<a href="phones.html">Phones</a>
+					<a href="#">Phone Accessories</a>
+					<a href="#">Other</a>
+				</div>
+			</div>
+			<div class="_nav-selection">
+				<button  class="_nav-selection-button">Referbushed Products</button>
+				<div class="_nav-selection-content">
+					<a href="phones.html">Phones</a>
+					<a href="#">Phone Accessories</a>
+					<a href="#">Other</a>
+				</div>
+			</div>
+			<div class="_nav-selection">
+				<button class="_nav-selection-button">Repair Services</button>
+				<div class="_nav-selection-content">
+					<a href="phones.html">Phones</a>
+					<a href="#">Phone Accessories</a>
+					<a href="#">Other</a>
+				</div>
+			</div>
+			<div class="_nav-selection">
+				<button class="_nav-selection-button">Contact Us</button>
+				<div class="_nav-selection-content">
+					<a href="phones.html">TEMP</a>
+					<a href="#">TEMP</a>
+					<a href="#">TEMP</a>
+				</div>
+			</div>
 		</nav>
 	</section>
 	<div id="sidenav" class="sidenav-style">
@@ -33,177 +84,13 @@
 		<a href="#">Contact</a>
 	</div>
 	<div id="display">
-		<a href="#_section1"><h2>Check out our products</h2></a>
+		<a href="#_section_m"><h2>Check out our products</h2></a>
 	</div>
 	
 	<section id="_section_m">
 		<section id="_section_m_product_holder">
-			<h1 class="_section_m_product_title">Title One</h1>
-			<div class="product">
-				<div class="product-model">Model</div>
-				<div class="product-detail">Details</div>
-				<div class="product-holder">
-					<p class="product-heading">TITLE PHONE</p>
-					<div class="product-discription">
-						<ul class="product-discription_details">
-							<li>SIZE</li>
-							<li>WEIGHT</li>
-							<li>CPU</li>
-							<li>RAM</li>
-							<li>GPU</li>
-							<li>STORAGE</li>
-							<li>DISPLAY</li>
-							<li>CAMERA</li>
-							<li>BATTERY</li>
-							<li>PLATFORM</li>
-							<li>COLOR</li>
-							<li>REPAIRED</li>
-						</ul>
-						<ul class="product-discription_specs">
-							<li>:  (w)00 (h)00 (l)00</li>
-							<li>:  00Kg</li>
-							<li>:  Octa-core 1.4 GHz C-A53</li>
-							<li>:  Adreno 505</li>
-							<li>:  3GB RAM </li>
-							<li>:  32 GB</li>
-							<li>:  5.5 Inches 720 x 1280 pixels </li>
-							<li>:  12 MP, 1080p@30fps</li>
-							<li>:  Non-removable Li-Ion 4000</li>
-							<li>:  Android 7.0 (Nougat)</li>
-							<li>:  Black</li>
-							<li>:  Repaired 2017, April</li>
-						</ul>
-						<p class="product-view_details">View Details</p>
-					</div>
-					<a href="#"><img src="images/phone-image.png" class="product-image"></a>
-				</div>
-				<!span class="product-price">&#8364;300<!/span>
-				<div class="product-add"><p class="product-price">&#8364;200</p> Add to Cart</div>
-			</div>
+		<h1 class="_section_m_product_title">Whats on Offer?</h1>
 			
-			<div class="product">
-				<div class="product-model">Model</div>
-				<div class="product-detail">Details</div>
-				<div class="product-holder">
-					<p class="product-heading">TITLE PHONE</p>
-					<div class="product-discription">
-						<ul class="product-discription_details">
-							<li>SIZE</li>
-							<li>WEIGHT</li>
-							<li>CPU</li>
-							<li>RAM</li>
-							<li>GPU</li>
-							<li>STORAGE</li>
-							<li>DISPLAY</li>
-							<li>CAMERA</li>
-							<li>BATTERY</li>
-							<li>PLATFORM</li>
-							<li>COLOR</li>
-							<li>REPAIRED</li>
-						</ul>
-						<ul class="product-discription_specs">
-							<li>:  (w)00 (h)00 (l)00</li>
-							<li>:  00Kg</li>
-							<li>:  Octa-core 1.4 GHz C-A53</li>
-							<li>:  Adreno 505</li>
-							<li>:  3GB RAM </li>
-							<li>:  32 GB</li>
-							<li>:  5.5 Inches 720 x 1280 pixels </li>
-							<li>:  12 MP, 1080p@30fps</li>
-							<li>:  Non-removable Li-Ion 4000</li>
-							<li>:  Android 7.0 (Nougat)</li>
-							<li>:  Black</li>
-							<li>:  Repaired 2017, April</li>
-						</ul>
-						<p class="product-view_details">View Details</p>
-					</div>
-					<a href="#"><img src="images/phone-image.png" class="product-image"></a>
-				</div>
-				<!span class="product-price">&#8364;300<!/span>
-				<div class="product-add"><p class="product-price">&#8364;200</p> Add to Cart</div>
-			</div>
-			<div class="product">
-				<div class="product-model">Model</div>
-				<div class="product-detail">Details</div>
-				<div class="product-holder">
-					<p class="product-heading">TITLE PHONE</p>
-					<div class="product-discription">
-						<ul class="product-discription_details">
-							<li>SIZE</li>
-							<li>WEIGHT</li>
-							<li>CPU</li>
-							<li>RAM</li>
-							<li>GPU</li>
-							<li>STORAGE</li>
-							<li>DISPLAY</li>
-							<li>CAMERA</li>
-							<li>BATTERY</li>
-							<li>PLATFORM</li>
-							<li>COLOR</li>
-							<li>REPAIRED</li>
-						</ul>
-						<ul class="product-discription_specs">
-							<li>:  (w)00 (h)00 (l)00</li>
-							<li>:  00Kg</li>
-							<li>:  Octa-core 1.4 GHz C-A53</li>
-							<li>:  Adreno 505</li>
-							<li>:  3GB RAM </li>
-							<li>:  32 GB</li>
-							<li>:  5.5 Inches 720 x 1280 pixels </li>
-							<li>:  12 MP, 1080p@30fps</li>
-							<li>:  Non-removable Li-Ion 4000</li>
-							<li>:  Android 7.0 (Nougat)</li>
-							<li>:  Black</li>
-							<li>:  Repaired 2017, April</li>
-						</ul>
-						<p class="product-view_details">View Details</p>
-					</div>
-					<a href="#"><img src="images/phone-image.png" class="product-image"></a>
-				</div>
-				<!span class="product-price">&#8364;300<!/span>
-				<div class="product-add"><p class="product-price">&#8364;200</p> Add to Cart</div>
-			</div>
-			<div class="product">
-				<div class="product-model">Model</div>
-				<div class="product-detail">Details</div>
-				<div class="product-holder">
-					<p class="product-heading">TITLE PHONE</p>
-					<div class="product-discription">
-						<ul class="product-discription_details">
-							<li>SIZE</li>
-							<li>WEIGHT</li>
-							<li>CPU</li>
-							<li>RAM</li>
-							<li>GPU</li>
-							<li>STORAGE</li>
-							<li>DISPLAY</li>
-							<li>CAMERA</li>
-							<li>BATTERY</li>
-							<li>PLATFORM</li>
-							<li>COLOR</li>
-							<li>REPAIRED</li>
-						</ul>
-						<ul class="product-discription_specs">
-							<li>:  (w)00 (h)00 (l)00</li>
-							<li>:  00Kg</li>
-							<li>:  Octa-core 1.4 GHz C-A53</li>
-							<li>:  Adreno 505</li>
-							<li>:  3GB RAM </li>
-							<li>:  32 GB</li>
-							<li>:  5.5 Inches 720 x 1280 pixels </li>
-							<li>:  12 MP, 1080p@30fps</li>
-							<li>:  Non-removable Li-Ion 4000</li>
-							<li>:  Android 7.0 (Nougat)</li>
-							<li>:  Black</li>
-							<li>:  Repaired 2017, April</li>
-						</ul>
-						<p class="product-view_details">View Details</p>
-					</div>
-					<a href="#"><img src="images/phone-image.png" class="product-image"></a>
-				</div>
-				<!span class="product-price">&#8364;300<!/span>
-				<div class="product-add"><p class="product-price">&#8364;200</p> Add to Cart</div>
-			</div>
 		</section>
 	</section>
 	<footer>
